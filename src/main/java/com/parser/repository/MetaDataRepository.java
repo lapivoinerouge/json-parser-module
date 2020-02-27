@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 @Transactional
 @Repository
@@ -19,5 +18,5 @@ public interface MetaDataRepository extends CrudRepository<MetaData, String> {
 
     void deleteByFrameId(String frameId);
 
-    Optional<MetaData> findByFrameId(String frameId);
+    MetaData findByFrameId(String frameId);
 }

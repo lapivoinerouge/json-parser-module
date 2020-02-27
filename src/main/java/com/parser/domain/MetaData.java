@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Entity(name = "meta_data")
+@Entity
 public class MetaData {
     @Id
     private String frameId;
@@ -22,11 +22,11 @@ public class MetaData {
     @NotNull
     private BigDecimal recognitionFrameRate;
 
-    @Column(name = "GPS_LAT")
+    @Column
     @NotNull
     private BigDecimal gpsLat;
 
-    @Column(name = "GPS_LON")
+    @Column
     @NotNull
     private BigDecimal gpsLon;
 
@@ -43,7 +43,7 @@ public class MetaData {
     private BigDecimal accelerationZ;
 
     @Column
-    private BigDecimal volumeCaoacityPercentage;
+    private BigDecimal volumeCapacityPercentage;
 
     @Column
     private BigDecimal altitude;

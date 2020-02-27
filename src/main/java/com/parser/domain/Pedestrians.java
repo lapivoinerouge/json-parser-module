@@ -15,9 +15,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Entity(name = "pedestrians")
+@Entity
 @IdClass(CompositePedestrianId.class)
-public class Pedestrian implements Serializable {
+public class Pedestrians implements Serializable {
     @Id
     private String frameId;
 

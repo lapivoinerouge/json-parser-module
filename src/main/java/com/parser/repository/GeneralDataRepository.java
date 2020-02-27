@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 @Transactional
 @Repository
@@ -19,5 +18,5 @@ public interface GeneralDataRepository extends CrudRepository<GeneralData, Strin
 
     void deleteByFrameId(String frameId);
 
-    Optional<GeneralData> findByFrameId(String frameId);
+    GeneralData findByFrameId(String frameId);
 }

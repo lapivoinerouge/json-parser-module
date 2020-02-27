@@ -13,9 +13,10 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Entity(name = "general_data")
+@Entity
 public class GeneralData {
     @Id
+    @Column
     private String frameId;
 
     @Column
@@ -31,7 +32,7 @@ public class GeneralData {
 
     @Column
     @NotNull
-    private BigDecimal timestamp;
+    private BigDecimal timeStamp;
 
     @Column
     @NotNull
