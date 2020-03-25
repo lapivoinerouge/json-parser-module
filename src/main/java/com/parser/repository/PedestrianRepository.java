@@ -19,4 +19,6 @@ public interface PedestrianRepository extends CrudRepository<Pedestrians, String
     void deleteByFrameId(String frameId);
 
     Pedestrians findByFrameId(String frameId);
+
+    Pedestrians findByPedIdx(Integer pedIdx);
 }
