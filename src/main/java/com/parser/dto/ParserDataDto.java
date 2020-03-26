@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -23,7 +24,7 @@ public class ParserDataDto {
     private String deviceId;
 
     @JsonProperty("pedestrians")
-    private PedestriansDto[] pedestrians;
+    private List<PedestriansDto> pedestrians;
 
     @JsonProperty("imageLabelledFilename")
     private String imageLabelledFilename;
